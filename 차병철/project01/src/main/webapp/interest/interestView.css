@@ -1,0 +1,22 @@
+
+
+
+#title{
+   
+/*    border: 1px solid gray;*/
+/*    flex-grow: 3;*/
+    height: 60px;
+    position:static;
+    font-size: 2rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.4);
+    font-family: 'Nanum Gothic', sans-serif;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #333333;
+    
+    
+}
+
+

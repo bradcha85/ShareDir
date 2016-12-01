@@ -1,0 +1,74 @@
+@import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
+body {
+    font-family: 'Hanna', fantasy;
+    font-weight: 200;
+    color: black width: 1400px;
+ 
+    font-size: 12px;
+}
+
+
+.row:nth-child(1) {
+    height: 70px;
+    padding-top: 35px;
+}
+
+#vote {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+/*  img{
+      
+      width : 75px;
+      height : 75px;      
+      }  */
+
+.js-hide {
+    display: none;
+}
+
+#image_preview {
+    display: none;
+}
+
+
+/* input {
+   width : 180px;
+}*/
+
+.c-product img {
+    align-content: center;
+}
+
+#filebox label {
+    display: inline-block;
+    /*padding: .5em .75em; */
+    padding: 10px;
+    color: #fff;
+    font-size: inherit;
+    line-height: normal;
+    vertical-align: middle;
+    background-color: #5cb85c;
+    cursor: pointer;
+    border: 1px solid #ebebeb;
+    border-bottom-color: #e2e2e2;
+    border-radius: .25em;
+}
+
+#filebox input[type="file"] {
+    /* �뙆�씪 �븘�뱶 �닲湲곌린 */
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.col-sm-1 control-label {
+    font-size:
+}

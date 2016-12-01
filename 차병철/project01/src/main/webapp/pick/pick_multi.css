@@ -1,0 +1,166 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+
+
+
+body{
+    width: 700px;
+  
+}
+
+
+#title{
+   
+/*    border: 1px solid gray;*/
+/*    flex-grow: 3;*/
+    height: 60px;
+    position:static;
+    font-size: 2rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.4);
+    font-family: 'Nanum Gothic', sans-serif;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #333333;
+    
+    
+}
+#content{
+    
+     padding-top: 10px;
+
+    height: 60px;
+    position:static;
+    font-size: 1rem;
+    font-weight: 200;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.4);
+    font-family: 'Nanum Gothic', sans-serif;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #333333;
+    
+}
+
+
+.info{
+  font-size:1rem;
+   font-family: Lato, sans-serif;
+    font-weight: 400;
+        padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+#pick-btn{
+    margin-left:500px;
+    
+
+}
+
+
+
+
+ul {
+  list-style-type: none !important;
+}
+
+li {
+  display: inline-block !important;
+}
+
+input[type="checkbox"][id^="cb"] {
+  display: none !important;
+}
+
+input[type="radio"][id^="cb"] {
+  display: none !important;
+}
+
+label {
+  border: 1px solid #fff !important;
+  padding: 10px !important;
+  border-radius: 50% !important;
+  display: block !important;
+  position: relative !important;
+  margin: 10px !important;
+  cursor: pointer !important;
+}
+
+label:before {
+  background-color: rgba(16, 65, 99, 0.32 ) !important;
+  text-align:center !important;
+  color: white !important;
+  content: " " !important;
+  display: block !important;
+  border-radius: 50% !important;
+/*   border: 1px solid grey; */
+  position: absolute !important;
+  top:10px !important;
+  left: 10px !important;
+  z-index:1 !important;
+  width:150px  !important;
+  height: 150px  !important;
+  text-align: center !important;
+  line-height: 100px !important;
+  transition-duration: 0.4s !important;
+  transform: scale(0) !important;
+}
+
+label img {
+  height: 150px !important;
+  width: 150px !important;
+  transition-duration: 0.1s !important;
+  transform-origin: 50% 50% !important;
+  border-radius: 50% !important;
+}
+
+:checked + label {
+  border-color: #eee !important;
+}
+
+:checked + label:before {
+  content: "\2713" !important;
+
+  transform: scale(1.1) !important;
+}
+
+:checked + label img {
+  transform: scale(1.2) !important;
+  box-shadow: 0 0 3px #333 !important;
+  z-index: -1 !important;
+}
+
+
+
+
+
+
+.iconBtn{
+    
+    font-size: 2.7rem;
+    color: #333333;
+    font-weight: 700;
+
+    text-decoration: none;
+    transition:all 0.2s;
+
+    
+    
+}
+
+
+
+
+.iconBtn:active{
+    color: #80bbff;
+    transform: translateY(2px) translateX(2px);
+    
+}
+
+#bottom{
+    padding: 50px;
+}
+
+
