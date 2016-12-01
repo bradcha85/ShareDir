@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper
+		PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="VoteMapper">
+
+	<resultMap id="voteSelectMap" type="vote">
+		<result property="voteNo" column="VOTE_NO" jdbcType="NUMERIC" />
+		<result property="userNo" column="USER_NO" jdbcType="NUMERIC" />
+		<result property="voteCategory" column="VOTE_CATG" jdbcType="VARCHAR" />
+		<result property="voteTitle" column="VOTE_TITL" jdbcType="VARCHAR" />
+		<result property="voteContent" column="VOTE_CONT" jdbcType="CLOB" />
+		<result property="voteHits" column="VOTE_HITS" jdbcType="NUMERIC" />
+		<result property="endDate" column="END_DATE" jdbcType="DATE" />
+		<result property="voteType" column="VOTE_TYPE" jdbcType="VARCHAR" />
+		<result property="voteMax" column="VOTE_MAX" jdbcType="NUMERIC" />
+	</resultMap>
+
+	<!-- SQL : INSERT --> <!-- seq_product_prod_no.NEXTVAL --> <!-- #{ssn:VARCHAR} , -->
+	<insert id="addVote" parameterType="vote">
+		INSERT
+		INTO PRODUCT( VOTE_NO , USER_NO , VOTE_CATG , VOTE_TITL , VOTE_CONT, 
+		VOTE_HITS, END_DATE, VOTE_TYPE , VOTE_MAX)
+		VALUES (seq_vote_no.NEXTVAL, #{userNo},#{voteCategory},#{voteTitle},#{voteContent}, 
+		 #{voteHits},SYSDATE,#{voteType},#{voteMax})
+	</insert>
+
+   <!--  replace(${endDate},'-', '') -->
+<!--  
+	<select id="getProduct" parameterType="string" resultMap="productSelectMap">
+		SELECT
+		PROD_NO , PROD_NAME , PROD_DETAIL ,IMAGE_FILE , MANUFACTURE_DAY ,
+		PRICE , REG_DATE
+		FROM PRODUCT
+		WHERE PROD_NO = #{value}
+	</select>
+ -->
+
+</mapper>
