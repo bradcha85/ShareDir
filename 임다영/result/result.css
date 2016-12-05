@@ -1,0 +1,291 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+
+
+
+/*그래프 */
+
+path {  stroke: #fff; }
+path:hover {  opacity:0.9; }
+rect:hover {  fill:#D9F3F2; }
+.axis {  font: 10px sans-serif; }
+.legend tr{    border-bottom:1px solid grey; }
+.legend tr:first-child{    border-top:1px solid grey; }
+
+
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {  display: none; }
+.legend{
+
+	margin-left:30px;
+    display:inline-block;
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+.legend td{
+    padding:4px 5px;
+    vertical-align:bottom;
+}
+.legendFreq, .legendPerc{
+    align:right;
+    width:50px;
+}
+
+.pieChart{
+	margin-left: 20px;
+}
+/**/
+/* 커스텀*/
+
+#title{
+   
+   padding-top: ;
+/*     width:100px !important;*/
+/*    height: 60px;*/
+    position:absolute;
+    top:70px;
+    left: 350px;
+    font-size: 2rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+    font-family: 'Nanum Gothic', sans-serif;
+  margin-left: 100px;
+/*    width: 100px ;*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 0px !important; 
+    color: #333333;
+    letter-spacing: 5px;
+    
+}
+#content{
+    
+    letter-spacing: 2px;
+     padding-top: 30;
+/*    margin-top: 10px;*/
+    height: 60px;
+    position:absolute;
+    top:150px;
+    left: 435px;
+    font-size: 1.2rem;
+    font-weight: 500;
+/*    text-shadow: 2px 2px 3px rgba(0,0,0,0.4);*/
+    font-family: 'Nanum Gothic', sans-serif;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #333333;
+    
+}
+
+
+body{
+    width: 800px;
+  
+}
+
+#gender_dashboard{
+	width: 600px;
+	margin: auto;
+}
+
+
+#gender_legend{
+	margin-bottom: 76px;
+}
+table{
+    width: auto !important;
+}
+
+/**/
+/*comment  */
+	
+
+.detailBox {
+    width:420px;
+/*    border:1px solid #bbb;*/
+    margin-top: 50px;
+}
+
+
+.commentBox {
+    padding:10px;
+    border-top:1px dotted #bbb;
+}
+.commentBox .form-group:first-child, .actionBox .form-group:first-child {
+    width:80%;
+}
+.commentBox .form-group:nth-child(2), .actionBox .form-group:nth-child(2) {
+    width:18%;
+}
+.actionBox .form-group * {
+    width:100%;
+}
+.taskDescription {
+    margin-top:10px 0;
+}
+.commentList {
+    padding:0;
+    list-style:none;
+  
+    max-height:200px;
+    overflow:auto;
+}
+
+.commentList li {
+    margin:0;
+    margin-top:10px;
+}
+.commentList li > div {
+    display:table-cell;
+}
+.commenterImage {
+    width:30px;
+    margin-right:5px;
+    height:100%;
+    float:left;
+}
+.commenterImage img {
+    width:100%;
+    border-radius:50%;
+}
+.commentText p {
+    margin:0;
+}
+.sub-text {
+    color:#aaa;
+    font-family:verdana;
+    font-size:11px;
+}
+.actionBox {
+    border-top:1px dotted #bbb;
+    padding:10px;
+}
+
+#category{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 190px;
+}
+#age_pie{
+    
+    position: absolute;
+        left: 550px;
+    top: 500px;
+    
+}
+#age_legend{
+    
+    position: absolute !important;
+    top:258px !important;
+    left: 780px; !importnat;
+    
+}
+#gender_pie{
+    
+    position: absolute !important;
+    left: 550px !important;
+    top: 250px !important;
+    
+    
+}
+#gender_legend{
+    
+    position: absolute !important;
+    top:570px !important;
+    left: 780px; !importnat;
+
+	margin-bottom: 76px;
+}
+
+
+#histogram{
+    
+    position: absolute !important;
+    top:254px !important;
+    left: 252px; !importnat;
+    
+}
+
+#comment1{
+    position: absolute !important;
+    top:754px !important;
+    left: 160px; !importnat;
+    
+    
+}
+
+#comment2{
+    
+    position: absolute !important;
+    top:754px !important;
+    left: 640px; !importnat;
+    
+}
+#commentsend1{
+    position: absolute !important;
+    top: 325px !important;
+    left: 125px !important;
+    padding-left: 220px !important;
+    color: #333333 !important;
+    font-weight: 500 !important;
+    font-size: 1rem !important;
+    letter-spacing: 1px !important;
+}
+#commentsend2{
+    position: absolute !important;
+    top: 310px !important;
+    left: 125px !important;
+    padding-left: 220px !important;
+    color: #333333 !important;
+    font-weight: 500 !important;
+    font-size: 1rem !important;
+    letter-spacing: 1px !important;
+}
+#yes{
+    position: absolute !important;
+    top:754px !important;
+    left: 330px; !importnat;
+    font-size: 2.3rem;
+    letter-spacing: 10px;
+    font-weight: 800;
+    color: #333333;
+    
+}
+
+#no{
+    position: absolute !important;
+    top:754px !important;
+    left: 820px; !importnat;
+    font-size: 2.3rem;
+    letter-spacing: 10px;
+    font-weight: 800;
+    color: #333333;
+    
+}
+
+/*  */
+
+.tick text{
+    font-weight: 600 !important;
+    font-size: 1.4rem !important;
+}
+#save{
+    font-size: 1.3rem;
+    font-weight: 500 !important;
+    letter-spacing: 1px;
+    color: #333333 !important;
+    position: absolute !important;
+    left: 900px !important;
+    top:50px !important;
+}
+
+
