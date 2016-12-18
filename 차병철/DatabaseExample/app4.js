@@ -45,33 +45,34 @@ function connectDB() {
 			password : {type : String , required : true} , 
 			name : {type: String , index : 'hashed' } ,
 			age : {type: Number , 'default' : -1},
-			create_at : {type : Date, index : {unique : false} , 'default'  : Date.now},
+			created_at : {type : Date, index : {unique : false} , 'default'  : Date.now},
 			updated_at : {type : Date, index : {unique : false} , 'default'  : Date.now},
 		}); // end of UserSchema
+		
+		
+		// 스키마에 static 메소드 추가 
+		UserSchema.static('findById', function(id, callback){
+			return this.find({id : id} , callback);
+		});
+
+		UserSchema.static('findAll' , function(callback){
+			return this.find({ }, callback);
+		});
 		
 		console.log("UserSchema 정의함.");
 		
 		//User 모델 정의 
-		UserModel = mongoose.model("users" , UserSchema);
-		console.log('user 정의함. ');
+		UserModel = mongoose.model("users2" , UserSchema);
+		console.log('UserModel 정의함. ');
+		
 	});//end of database
 	database.on('disconnected' , connectDB);
 }//end of connectDB
 
 
-// 스키마에 static 메소드 추가 
 
-UserSchema.static('findById', function(id, callback){
-	return this.find({id : id} , callback);
-});
 
-UserSchema.static('findAll' , function(callback){
-	return this.find({ }, callback);
-});
 
-// UserModel 모델 정의 
-UserModel = mongoose.model("user2" , UserSchema);
-console.log("UserModel 정의함.");
 
 
 //사용자를 인증하는 함수 
@@ -260,7 +261,7 @@ app.post('/process/listuser' , function(req,res){
 			  for(var i = 0 ; i < results.length; i++){
 				  var curId = results[i]._doc.id;
 				  var curName = results[i]._doc.name;
-				  res.write(' <li>#' + i + ' : ' + curId + '. ' + curName + '</li>');
+				  res.write(' <li>#' + i + ' : ' + curId + ', ' + curName + '</li>');
 			  }//end of for
 			  
 			  res.write('</ul></div>');
